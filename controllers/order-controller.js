@@ -44,7 +44,6 @@ module.exports = class OrderController extends BaseController {
   _mapToDBObj(options) {
     const obj = options.obj;
     const dto = options.body;
-    console.log(dto.services)
     obj.set('services', dto.services);
     if (options.op == BaseController.CREATE_OP)
       obj.set('dateTime', new Date());
