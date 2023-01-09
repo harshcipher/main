@@ -24,7 +24,6 @@ module.exports = class OrderController extends BaseController {
         qb.orderBy('dateTime', 'desc')
       }).fetch({ limit: 1 })
 
-      console.log(existingOrder)
       if (existingOrder)
         ve.push(`Last order was created on ${existingOrder.attributes.dateTime}. you must wait 3 hours after this to create or update an order.`)
     }
