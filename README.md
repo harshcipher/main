@@ -8,7 +8,7 @@
 all other necesaary packages like express.js and required OEM will be installed via package.json
 
 ### steps to run this project
-1. open integrated terminal in root directory of project
+1. open integrated terminal in root directory of project.
 2. npm i
 3. CREATE a pg database.
 4. fill .env with required pg database creds
